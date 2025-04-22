@@ -30,7 +30,7 @@ public class PracticeFormTest {
         practiceFormPage.selectGender("Female");
         practiceFormPage.enterMobile("0123456789");
         practiceFormPage.selectDateOfBirth("15", "December", "1990");
-        practiceFormPage.enterSubject("Quality control engineer");
+        practiceFormPage.enterSubject("Computer Science");
         practiceFormPage.selectHobby("Music");
         practiceFormPage.uploadPicture(System.getProperty("user.dir") + "\\src\\test\\resources\\sample.jpg");
         practiceFormPage.enterAddress("123 First Street");

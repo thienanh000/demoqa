@@ -12,7 +12,7 @@ import java.util.List;
 
 public class PracticeFormPage {
     WebDriver driver;
-
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     @FindBy(id = "firstName")
     private WebElement firstNameField;
     @FindBy(id = "lastName")
@@ -138,7 +138,6 @@ public class PracticeFormPage {
     }
 
     public String getMobileFieldBorderColor() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.attributeContains(mobileField, "border-color", "rgb(220, 53, 69"));
         return mobileField.getCssValue("border-color");
     }
